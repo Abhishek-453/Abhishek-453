@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="form-title">Event Registration</h2>
+
+        <form action="#" method="POST" class="form-spacing">
+            <!-- Full Name -->
+            <div>
+                <label for="fullName" class="label-style">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Sam XYZ"
+                       class="input-field"
+                       required>
+            </div>
+
+            <!-- Email Address -->
+            <div>
+                <label for="email" class="label-style">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="sam.xyz@example.com"
+                       class="input-field"
+                       required>
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+                <label for="phone" class="label-style">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890"
+                       class="input-field">
+            </div>
+
+            <!-- Select Event -->
+            <div>
+                <label for="event" class="label-style">Select Event</label>
+                <select id="event" name="event"
+                        class="input-field select-field"
+                        required>
+                    <option value="">-- Please select an event --</option>
+                    <option value="tech_summit">Annual Tech Summit</option>
+                    <option value="innovation_expo">Innovation Expo 2025</option>
+                    <option value="design_forum">Creative Design Forum</option>
+                    <option value="startup_pitch">Startup Pitch Day</option>
+                </select>
+            </div>
+
+            <!-- Special Requests/Comments -->
+            <div>
+                <label for="comments" class="label-style">Special Requests / Comments</label>
+                <textarea id="comments" name="comments" rows="3" placeholder="Any dietary restrictions, accessibility needs, etc."
+                          class="input-field text-area-field"></textarea>
+            </div>
+
+            <!-- Gender Radio Buttons -->
+            <div>
+                <label class="label-style">Gender</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input id="gender-male" name="gender" type="radio" value="male"
+                               class="radio-input">
+                        <label for="gender-male" class="radio-label">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input id="gender-female" name="gender" type="radio" value="female"
+                               class="radio-input">
+                        <label for="gender-female" class="ml-2 block text-sm text-gray-900">Female</label>
+                    </div>
+                    <div class="radio-option">
+                        <input id="gender-other" name="gender" type="radio" value="other"
+                               class="radio-input">
+                        <label for="gender-other" class="ml-2 block text-sm text-gray-900">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terms and Conditions Checkbox -->
+            <div class="checkbox-container">
+                <input id="terms" name="terms" type="checkbox"
+                       class="checkbox-input"
+                       required>
+                <label for="terms" class="checkbox-label">
+                    I agree to the <a href="#" class="link-style">terms and conditions</a>
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="submit-button">
+                    Register Now
+                </button>
+            </div>
+        </form>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

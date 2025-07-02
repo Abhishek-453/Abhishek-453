@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Loan Calculator</title>
+    <link rel="stylesheet" href="Loan.css">
+
+</head>
+<body>
+
+    <div class="calculator-box">
+        <h2>My Simple Loan Calculator</h2>
+        
+        <form id="loanForm">
+            <div class="input-group">
+            <div class="input-group">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" required>
+            </div>
+            <div class="input-group">
+                <label for="loanAmountInput">Loan Amount (₹):</label>
+                <input type="number" id="loanAmountInput" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="interestRateInput">What is the Interest Rate? (%)</label>
+                <input type="number" id="interestRateInput" step="0.01" min="0.01" max="100" required>
+            </div>
+            <div class="input-group">
+                <label for="loanDurationInput">Lone Tenure</label>
+                <div class="tenure-section">
+                    <input type="number" id="Lone Tenure" min="1" required placeholder="Enter loan duration" title="Enter the loan duration">
+                
+                    <select id="durationUnitSelect" title="Select duration unit">
+                        <option value="months">Months</option>
+                        <option value="years">Years</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Calculate My EMI</button>
+        </form>
