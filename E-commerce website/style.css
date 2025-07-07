@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+/* Default for desktop/larger screens */
+body {
+  font-size: 18px;
+  background-color: #f4f4f4;
+}
+
+/* Tablet view (width between 600px and 900px) */
+@media (max-width: 900px) and (min-width: 601px) {
+  body {
+    font-size: 16px;
+    background-color: #e0f7fa;
+  }
+}
+
+/* Mobile view (width less than 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    background-color: #fff3e0;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+.product-card {
+  width: 100%;
+  margin: 10px 0;
+}
+}
+@media (orientation: landscape) {
+    
+  body {
+    background-color: lightcoral;
+  }
+}
+
+
+#mobile-menu-toggle {
+    display: none;
+    /* Mobile navigation links */
+}
+
+.mobile-nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 64px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 40;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.mobile-nav-links.open {
+    display: flex; /* Show when open */
+}
+
+.mobile-nav-links a {
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.mobile-nav-links a:hover {
+    background-color: #f0f0f0;
+}
+
+
+@media (max-width: 767px) {
+    .hamburger-icon {
+        display: block;
+    }
+    @media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    font-size: 14px;
+  }
+  @media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+    font-size: 16px;
+  }
+  @media (min-width: 1025px) {
+  .container {
+    padding: 30px;
+    font-size: 18px;
+  }
+}
+
+}
+
+}
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1a202c;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        padding: 1rem 0;
+        border-radius: 0 0 0.5rem 0.5rem;
+        z-index: 10;
+    }
+    .nav-links a {
+        padding: 0.75rem 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    #mobile-menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+}
